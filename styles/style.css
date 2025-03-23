@@ -245,7 +245,8 @@ img{
     }
 
     .apresentacao__imagem{
-        width: 50%;
+        width: 300px;
+        height: 360px;
         position: static;
         margin-top: 20px;
     }
