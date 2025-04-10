@@ -10,28 +10,90 @@
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre Mim</a>
-            <a class="cabecalho__menu__link" href="projects.html">Projetos</a>
+            <a class="cabecalho__menu__link" href="#home">Home</a>
+            <a class="cabecalho__menu__link" href="#sobre">Sobre Mim</a>
+            <a class="cabecalho__menu__link" href="#projetos">Projetos</a>
         </nav>
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-        <h1 class="apresentacao__titulo"><strong class="destaque_titulo">Eleve seu negócio digital a outro nível
-        com um Back-end de qualidade para sua aplicações!</strong></h1>
-        <p class="apresentacao__paragrafo">Olá! Sou Pedro Henrique, desenvolvedor Back-end com especialidade em <strong>Java, 
-        Spring-Boot, JPA e PostgreSql</strong>.  Ajudo pequenos negócios a implementar soluções tecnológicas que aumentam a eficiência e reduzem custos. Vamos conversar sobre como posso ajudar a transformar suas ideias em realidade?</p>
-        <div class="apresentacao__links">
-            <h2 class="apresentacao__links__subtitulos">Acesse minhas Redes:</h2>
-            <a class="apresentacao__links__botoes" href="https://github.com/PedroHQO">
-                <img src="./assets/icons8-github-50.png" alt="Logo gitHub">
-                GitHub</a>
-            <a class="apresentacao__links__botoes" href="https://www.linkedin.com/in/pedro-henrique-a07564207/">
-                <img src="./assets/icons8-linkedin-50.png" alt="Logo Linkedin">
-                Linkedin</a>
-        </div>
-    </section>
-        <img class="apresentacao__imagem" src="./assets/Pedro Henrique Fundo lara.png" alt="Foto Perfil Pedro Henrique">
+    <main>
+        <section id="home" class=" secao apresentacao">
+            <div class="apresentacao__conteudo">
+                <h1 class="apresentacao__titulo"><strong class="destaque_titulo">Eleve seu negócio digital a outro nível
+                com um Back-end de qualidade para sua aplicações!</strong></h1>
+                <p class="apresentacao__paragrafo">Olá! Sou Pedro Henrique, desenvolvedor Back-end com especialidade em <strong>Java, 
+                Spring-Boot, JPA e PostgreSql</strong>.  Ajudo pequenos negócios a implementar soluções tecnológicas que aumentam a eficiência e reduzem custos. Vamos conversar sobre como posso ajudar a transformar suas ideias em realidade?</p>
+                <div class="apresentacao__links">
+                    <h2 class="apresentacao__links__subtitulos">Acesse minhas Redes:</h2>
+                    <a class="apresentacao__links__botoes" href="https://github.com/PedroHQO">
+                        <img src="./assets/icons8-github-50.png" alt="Logo gitHub">
+                        GitHub
+                    </a>
+                    <a class="apresentacao__links__botoes" href="https://www.linkedin.com/in/pedro-henrique-a07564207/">
+                        <img src="./assets/icons8-linkedin-50.png" alt="Logo Linkedin">
+                        Linkedin
+                    </a>
+                    <a class="apresentacao__links__botoes" href="mailto:pedro39henrique.q.o@gmail.com?subject=Contato%20via%20Portfólio&body=Olá%20Pedro,%20vim%20pelo%20seu%20portfólio...">
+                        <img src="./assets/icons8-gmail-novo-50.png" alt="Logo Gmail">
+                        E-mail
+                    </a>
+                </div>
+            </div>
+            <img class="apresentacao__imagem" src="./assets/Pedro Henrique Fundo lara.png" alt="Foto Perfil Pedro Henrique">
+        </section>
+
+        <section id = "sobre" class="secao sobre-mim" >
+            <div class="sobre-mim__conteudo">
+                <h1 class="apresentacao__titulo">Sobre Mim</h1>
+                <p class="apresentacao__paragrafo">
+                    Olá! Meu nome é Pedro Henrique, e sou um desenvolvedor de software apaixonado por inovação e tecnologia. 
+                    Desde 2019, quando descobri minha paixão pela programação, tenho me dedicado a criar sistemas que impactam positivamente 
+                    pessoas e negócios. Utilizo tecnologias como <strong>Java, Spring Boot, JPA e PostgreSQL</strong> para desenvolver 
+                    soluções escaláveis e de alta qualidade.
+                </p>
+                <p class="apresentacao__paragrafo">
+                    Acredito que a chave para o sucesso está na resiliência, e ela só é alcançada com constância e disciplina. 
+                    Por isso, estou sempre em busca de novos conhecimentos e tendências, participando de cursos, workshops e 
+                    comunidades da área.
+                </p>
+                <p class="apresentacao__paragrafo">
+                    Fora do mundo da programação, sou um entusiasta de música (com foco em bateria), pratico atletismo e adoro 
+                    ler. Esses interesses não só enriquecem minha criatividade, mas também ampliam minha visão de mundo.
+                </p>
+                <p class="apresentacao__paragrafo">
+                    Se você busca um profissional comprometido em transformar suas ideias em realidade, vamos conversar! 
+                    Estou sempre aberto a novos desafios e oportunidades de colaboração.
+                </p>
+            </div>
+        </section>
+
+        <section id="projetos" class="secao projeto">
+            <h1 class="projetos__titulo">Meus projetos</h1>
+
+            <div class="projetos__container">
+                <div class="projeto">
+                    <h2 class="projeto__titulo">API de Controle de Acesso</h2>
+                    <img class="projeto__imagem" src="./assets/controle de acesso.jpg" 
+                    alt="Imagem de um boneco conctado a um cadeado lado direito com check verde e esquerdo com x vermelho">
+                    <p class="projeto__descricao">
+                    Sistema que controla o acesso de usuários com "chaves de acesso" únicas. Administradores têm acesso completo, enquanto colaboradores têm permissões limitadas. Foco em segurança e organização.
+                    </p>
+                    <a class="projeto__link" href="https://github.com/PedroHQO/Api-Digital-Security.git" target="_blank">
+                    Ver Repositório no GitHub
+                    </a>
+                </div>
+
+                <div class="projeto">
+                    <h2 class="projeto__titulo">Bot de Agendamentos</h2>
+                    <img class="projeto__imagem" src="./assets/chatbot_UX_testing_block.png" alt="Robo com balão de mensagem">
+                    <p class="projeto__descricao">
+                    Um bot automatizado para o Telegram que responde a comandos e interage com os usuários. Desenvolvido com Java e a API do Telegram com banco de dados.
+                    </p>
+                    <a class="projeto__link" href="https://github.com/PedroHQO/bot-agendamentos-telegram.git" target="_blank">
+                    Ver Repositório no GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="rodape">
         <p>Desenvolvido por Pedro Henrique!</p>
