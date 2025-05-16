@@ -6,13 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="#home">Home</a>
-            <a class="cabecalho__menu__link" href="#sobre">Sobre Mim</a>
-            <a class="cabecalho__menu__link" href="#projetos">Projetos</a>
+            <div class="cabecalho__menu__esquerdo">
+                <a class="cabecalho__menu__link" href="#home">Home</a>
+                <a class="cabecalho__menu__link" href="#sobre">Sobre Mim</a>
+                <a class="cabecalho__menu__link" href="#projetos">Projetos</a>
+                <a class="cabecalho__menu__link" href="#contato">Contato</a>
+            </div>
+            <div class="cabecalho__menu__direito">
+                <a href="https://github.com/PedroHQO" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pedro-henrique-a07564207/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:pedro39henrique.q.o@gmail.com?subject=Contato%20via%20Portfólio&body=Olá%20Pedro,%20vim%20pelo%20seu%20portfólio..."><i class="fas fa-envelope"></i></a>
+            </div>
         </nav>
     </header>
     <main>
@@ -22,21 +31,6 @@
                 com um Back-end de qualidade para sua aplicações!</strong></h1>
                 <p class="apresentacao__paragrafo">Olá! Sou Pedro Henrique, desenvolvedor Back-end com especialidade em <strong>Java, 
                 Spring-Boot, JPA e PostgreSql</strong>.  Ajudo pequenos negócios a implementar soluções tecnológicas que aumentam a eficiência e reduzem custos. Vamos conversar sobre como posso ajudar a transformar suas ideias em realidade?</p>
-                <div class="apresentacao__links">
-                    <h2 class="apresentacao__links__subtitulos">Acesse minhas Redes:</h2>
-                    <a class="apresentacao__links__botoes" href="https://github.com/PedroHQO">
-                        <img src="./assets/icons8-github-50.png" alt="Logo gitHub">
-                        GitHub
-                    </a>
-                    <a class="apresentacao__links__botoes" href="https://www.linkedin.com/in/pedro-henrique-a07564207/">
-                        <img src="./assets/icons8-linkedin-50.png" alt="Logo Linkedin">
-                        Linkedin
-                    </a>
-                    <a class="apresentacao__links__botoes" href="mailto:pedro39henrique.q.o@gmail.com?subject=Contato%20via%20Portfólio&body=Olá%20Pedro,%20vim%20pelo%20seu%20portfólio...">
-                        <img src="./assets/icons8-gmail-novo-50.png" alt="Logo Gmail">
-                        E-mail
-                    </a>
-                </div>
             </div>
             <img class="apresentacao__imagem" src="./assets/Pedro Henrique Fundo lara.png" alt="Foto Perfil Pedro Henrique">
         </section>
@@ -93,6 +87,22 @@
                     </a>
                 </div>
             </div>
+        </section>
+        <section id="contato" class="secao contato">
+            <h1 class="contato__titulo">Entre em Contato</h1>
+            <form class="contato__formulario" id="formContato">
+                <div class="contato__campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="contato__campo">
+                    <label for="email">E-mail ou WhatsApp:</label>
+                    <input type="text" id="contato" name="contato" required>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="contato__botao">Enviar Mensagem</button>
+            </form>
         </section>
     </main>
     <footer class="rodape">
