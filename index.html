@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -28,9 +29,9 @@
         <section id="home" class=" secao apresentacao">
             <div class="apresentacao__conteudo">
                 <h1 class="apresentacao__titulo"><strong class="destaque_titulo">Eleve seu negócio digital a outro nível
-                com um Back-end de qualidade para sua aplicações!</strong></h1>
+                com um Desenvolvedor de qualidade para sua aplicações!</strong></h1>
                 <p class="apresentacao__paragrafo">Olá! Sou Pedro Henrique, desenvolvedor Back-end com especialidade em <strong>Java, 
-                Spring-Boot, JPA e PostgreSql</strong>.  Ajudo pequenos negócios a implementar soluções tecnológicas que aumentam a eficiência e reduzem custos. Vamos conversar sobre como posso ajudar a transformar suas ideias em realidade?</p>
+                Spring-Boot, JPA, Html, Css, JavaScript e PostgreSql</strong>.  Ajudo pequenos negócios a implementar soluções tecnológicas que aumentam a eficiência e visibilidade e reduzem custos. Vamos conversar sobre como posso ajudar a transformar suas ideias em realidade?</p>
             </div>
             <img class="apresentacao__imagem" src="./assets/Pedro Henrique Fundo lara.png" alt="Foto Perfil Pedro Henrique">
         </section>
@@ -91,22 +92,28 @@
         <section id="contato" class="secao contato">
             <h1 class="contato__titulo">Entre em Contato</h1>
             <form class="contato__formulario" id="formContato">
+                <input type="hidden" name="time" id="time">
                 <div class="contato__campo">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <input type="text" id="nome" name="name" required>
                 </div>
                 <div class="contato__campo">
-                    <label for="email">E-mail ou WhatsApp:</label>
-                    <input type="text" id="contato" name="contato" required>
+                    <label for="email">E-mail (obrigatório para resposta):</label>
+                    <input type="text" id="contato" name="email" required>
+                </div>
+                <div class="contato__campo">
                     <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    <textarea id="mensagem" name="message" rows="10" required></textarea>
                 </div>
                 <button type="submit" class="contato__botao">Enviar Mensagem</button>
+                <a href="https://wa.me/5535999256938" class="whatsapp-float" target="_blank">
+                    <i class="fab fa-whatsapp"></i>Fale comigo!</a>
             </form>
         </section>
     </main>
     <footer class="rodape">
-        <p>Desenvolvido por Pedro Henrique!</p>
+        <p>&copy; 2025 Pedro Henrique. Todos os direitos reservados. Desenvolvido por Pedro_HQO</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -292,6 +292,20 @@ img{
     background-color: var(--mouse-bottun-color);
 }
 
+.whatsapp-float{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
 @media(max-width: 768px){ 
     .cabecalho{
         position: static;
