@@ -253,9 +253,11 @@ img{
 }
 
 .projeto__imagem{
-    max-width: 100%;
-    height: auto;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
+    border: 2px solid var(--second-color)
 }
 
 .apresentacao__imagem{
@@ -314,11 +316,20 @@ img{
 
     .cabecalho__menu{
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        gap: 20px;
     }
 
     .cabecalho__menu__esquerdo{
+        flex-direction: column;
         gap: 15px;
+        text-align: center;
+    }
+
+    .cabecalho__menu__direito{
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
     }
 
     main{
@@ -406,6 +417,11 @@ img{
     .projeto__link{
         font-size: 1rem;
         padding: 8px 16px;
+    }
+
+    .projeto__imagem{
+        width: 100%;
+        height: 150%;
     }
 
     .apresentacao__imagem {
